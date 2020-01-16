@@ -18,11 +18,11 @@ class App extends React.Component {
 // button click alert
 
 function shoot() {
-  alert("Great Shot!");
+  alert("Masuk!");
 }
 
 const myelement = (
-  <button onClick={shoot}>Take the shot!</button>
+  <button onClick={shoot}>I'm here CLick me!</button>
 );
 
 ReactDOM.render(myelement, document.getElementById('button'));
@@ -66,7 +66,7 @@ class Product extends React.Component{
   }
   
   remove(){
-  	this.setState((prevState) => ({
+    this.setState((prevState) => ({
       qty: prevState.qty -1
     }));
     this.props.RemoveTotal(this.props.price);
